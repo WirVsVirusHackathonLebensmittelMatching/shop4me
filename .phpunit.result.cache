@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":324:{a:2:{s:7:"defects";a:2:{s:65:"Tests\Unit\TestImportCitiesFile::testToImportFromTabSeparatedFile";i:4;s:47:"Tests\Unit\TestImportCitiesFile::testToSaveCity";i:5;}s:5:"times";a:2:{s:65:"Tests\Unit\TestImportCitiesFile::testToImportFromTabSeparatedFile";d:97.52;s:47:"Tests\Unit\TestImportCitiesFile::testToSaveCity";d:0.678;}}}
