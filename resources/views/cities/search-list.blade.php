@@ -21,8 +21,14 @@
             </tr>
         @endforeach
         </tbody>
-        <form method="">
-
-        </form>
     </table>
+    <div class="row">
+        <div class="col-8">Für alle Stadteile gründen?</div>
+        <div class="col-4 float-right">
+            <form method="POST" action="">
+                <input type="hidden" value="{{$cities->pluck('id')}}">
+                <button type="submit" class="btn btn-primary btn-lg float-right">Ja, Weiter</button>
+            </form>
+        </div>
+    </div>
 @endsection
