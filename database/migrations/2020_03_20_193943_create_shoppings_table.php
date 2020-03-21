@@ -16,6 +16,7 @@ class CreateShoppingsTable extends Migration {
         Schema::create('shoppings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->softDeletes();
             $table->bigIncrements('owner_id');
             $table->bigIncrements('volunteer_id');
             $table->date('delivery_earliest_date');

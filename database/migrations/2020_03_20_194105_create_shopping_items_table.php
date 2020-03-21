@@ -16,6 +16,7 @@ class CreateShoppingItemsTable extends Migration {
         Schema::create('shopping_items', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->softDeletes();
             $table->string('item_name');
             $table->integer('item_amount');
             $table->boolean('item_buy_similar');
