@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/cities/claim', function (Request $request) {
+Route::post('/cities/find', function (Request $request) {
+    $controller = new \App\Http\Controllers\RegisterCityOwnerController();
+
+    return $controller->findZipCode($request);
+})->name('cities.find');
+
+Route::post('/cities/register', function (Request $request) {
     $controller = new \App\Http\Controllers\RegisterCityOwnerController();
 
     return $controller->register($request);

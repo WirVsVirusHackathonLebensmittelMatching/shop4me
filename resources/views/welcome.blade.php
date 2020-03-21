@@ -5,7 +5,7 @@
             <h1 class="text-center">
                 Starte dein Einkaufshilfe-Team <br>in deiner Stadt
             </h1>
-            <form action="{{route('cities.register')}}" method="post">
+            <form action="{{route('cities.find')}}" method="post">
                 <div class="form-group">
                     @csrf
                     <label for=""></label>

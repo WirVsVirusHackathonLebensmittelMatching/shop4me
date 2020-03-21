@@ -26,7 +26,8 @@
         <div class="col-8">Für alle Stadteile gründen?</div>
         <div class="col-4 float-right">
             <form method="POST" action="">
-                <input type="hidden" value="{{$cities->pluck('id')}}">
+                <input type="hidden" name="city_ids" value="{{$cities->pluck('id')}}">
+                <input type="hidden" name="zip_code" value="{{$zip_code}}">
                 <button type="submit" class="btn btn-primary btn-lg float-right">Ja, Weiter</button>
             </form>
         </div>
