@@ -1,13 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-
-@section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1>
                     Cool! Nur noch wenige Schritte, und du gründest dein Einkaufshelfer-Team in: {{$zip_code }}
+                    @isset($city)
+                        {{$city->city_name}}
+                    @endisset
                 </h1>
                 <div class="card">
                     <div

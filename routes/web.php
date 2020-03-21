@@ -27,7 +27,7 @@ Route::post('/cities/find', function (Request $request) {
 Route::post('/cities/register', function (Request $request) {
     $controller = new \App\Http\Controllers\RegisterCityOwnerController();
 
-    return $controller->register($request);
+    return $controller->registerCity($request);
 })->name('cities.register');
 
 Auth::routes();
