@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Super, du hast dich erfolgreich registriert.
+                    Super, du bist eingeloggt.
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-class RegisterCityOwnerController {
+class RegisterCityOwnerController extends Controller {
 
     use RegistersUsers;
 
@@ -23,6 +23,15 @@ class RegisterCityOwnerController {
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
 
     /**
      * Get a validator for an incoming registration request.

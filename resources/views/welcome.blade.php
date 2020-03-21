@@ -55,6 +55,32 @@
         </div>
     @endguest
     @auth
-        
+        <div class="row mb-5">
+            <div class="col-6 mx-auto">
+                <h1 class="text-center">
+                    Deine Stadt und Einkaufshelfer
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Stadt A</h5>
+                        <p class="card-text">Vervollständige deine Einkaufshelfer Details. Wie Hotline, E-Mail, etc.</p>
+                        <a href="#" class="btn btn-success">Bearbeiten</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tools</h5>
+                        <p class="card-text">Finde hilfreiche Tools, um deine Einkaufshilfe zu bewerben.</p>
+                        <a href="#" class="btn btn-success">Anzeigen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     @endauth
 @endsection
