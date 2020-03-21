@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1>
-                    Cool! Nur noch wenige Schritte, und du gründest dein Einkaufshelfer-Team in: {{$request->zip }}
+                    Cool! Nur noch wenige Schritte, und du gründest dein Einkaufshelfer-Team in: {{$city->zip_code }}
                 </h1>
                 <div class="card">
                     <div

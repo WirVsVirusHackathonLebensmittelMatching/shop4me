@@ -19,7 +19,9 @@ Route::get('/', function () {
 });
 
 Route::post('/cities/claim', function (Request $request) {
-    return view('register', ['request' => $request]);
+    $controller = new \App\Http\Controllers\RegisterCityOwnerController();
+
+    return $controller->register($request);
 })->name('cities.register');
 
 Auth::routes();

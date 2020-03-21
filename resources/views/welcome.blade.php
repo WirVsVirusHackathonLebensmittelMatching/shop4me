@@ -10,7 +10,7 @@
                     @csrf
                     <label for=""></label>
                     <input type="text"
-                           class="form-control form-control-lg" name="zip" id="zip" aria-describedby="helpId"
+                           class="form-control form-control-lg" name="zip_code" id="zip_code" aria-describedby="helpId"
                            placeholder="PLZ">
                     <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
                 </div>
