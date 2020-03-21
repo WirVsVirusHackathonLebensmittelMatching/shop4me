@@ -1,15 +1,14 @@
-# shop-for-me
-A simple web app to ask for help to shop
+# Shop For Me
+Eine einfache Web App, um Einkaufshelfer zu vernetzen.
 
-## Why?
-The received the challenge from a friend Tobias Schwarz with the blog post from Jon https://jonworth.eu/specification-shop-for-me-wordpress-plugin-for-coronavirus-community-response/.
+## Warum?
+Wir nutzen die Erfahrungswerte von dem Münster Team
+siehe: https://www.allesmuenster.de/wwu-studierende-organisieren-einkaufshilfe/
+Mit unserer Lösung möchten wir erreichen, dass solche Helfer schnell und einfach sich in ihrer Stadt organisieren können. Und eine zentrale Kontaktplattform haben, um ihre Hotline und Kontaktdaten mit COVID19-Risikogruppen zu teilen.
 
-First I wanted to join a challenge in the communication category. But after scanning the idea, I thought this should be pretty straight forward.
+## Ziel
+Den Bekanntheitsgrad erhöhen, so dass lokale Medien und Institutionen das Einkaufshilfe-Team der Stadt Bewohner darüber informieren und einen Link teilen zu der Stadt-Webseite. 
 
-## Let's start
-So I took the challenge and started right away instead of waiting for a slack link from #WirVsVirusHack
-My wordpress knowledge is so so but since I love laravel, I am using it.
+## Dokumente
+Google Spreadsheet als Todo: https://docs.google.com/spreadsheets/d/1JsOTmSJcXoyl4v8mdFs6POtVYc2hNeWid8SpNesk3hc/edit#gid=0
 
-You can find the challenge in the AirTable https://airtable.com/shrs71ccUVKyvLlUA/tbl6Br4W3IyPGk1jt/viw7AlEju6qFtXJqL?blocks=hide under ID #435
-
-Stay tuned and updated.
