@@ -22,9 +22,6 @@ class CreateUsersTable extends Migration {
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
-            $table->bigIncrements('role_id');
-
-            $table->foreign('role_id')->references('id')->on('roles');
         });
     }
 

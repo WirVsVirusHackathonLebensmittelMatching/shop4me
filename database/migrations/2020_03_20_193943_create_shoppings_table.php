@@ -17,8 +17,8 @@ class CreateShoppingsTable extends Migration {
             $table->id();
             $table->timestamps();
             $table->softDeletes();
-            $table->bigIncrements('owner_id');
-            $table->bigIncrements('volunteer_id');
+            $table->unsignedBigInteger('owner_id')->nullable();
+            $table->unsignedBigInteger('volunteer_id')->nullable();
             $table->date('delivery_earliest_date');
             $table->date('delivery_latest_date');
             $table->time('delivery_from_time');

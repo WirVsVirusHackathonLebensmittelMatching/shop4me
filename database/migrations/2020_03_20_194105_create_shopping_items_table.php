@@ -22,8 +22,8 @@ class CreateShoppingItemsTable extends Migration {
             $table->boolean('item_buy_similar');
             $table->boolean('item_not_buy');
 
-            $table->bigIncrements('shopping_id');
-            $table->foreign('shopping_id')->references('shopppings')->on('id');
+            $table->unsignedBigInteger('shopping_id')->nullable();
+            $table->foreign('shopping_id')->references('id')->on('shoppings');
         });
     }
 
