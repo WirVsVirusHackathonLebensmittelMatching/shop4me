@@ -15,7 +15,9 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $controller = new \App\Http\Controllers\RegisterCityOwnerController();
+
+    return $controller->index();
 });
 
 Route::post('/cities/find', function (Request $request) {

@@ -5,9 +5,23 @@ namespace App\Http\Controllers;
 
 
 use App\City;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterCityOwnerController extends Controller {
+
+    public function index()
+    {
+        $user = User::find(Auth::id());
+        $city = null;
+        if ($user->cities()->exists())
+        {
+            $city = $user->cities->first();
+        };
+
+        return view('welcome', ['city' => $city]);
+    }
 
     public function findZipCode(Request $request)
     {

@@ -63,15 +63,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Stadt A</h5>
-                        <p class="card-text">Vervollständige deine Einkaufshelfer Details. Wie Hotline, E-Mail, etc.</p>
-                        <a href="{{route('cities.edit', ['id'=>10425])}}" class="btn btn-success">Bearbeiten</a>
+            @if(!is_null($city))
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stadt A</h5>
+                            <p class="card-text">Vervollständige deine Einkaufshelfer Details. Wie Hotline, E-Mail,
+                                etc.</p>
+                            <a href="{{route('cities.edit', ['id'=> $city->id])}}" class="btn btn-success">Bearbeiten</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endif
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
