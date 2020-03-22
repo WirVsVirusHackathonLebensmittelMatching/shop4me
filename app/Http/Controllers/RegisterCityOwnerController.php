@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Auth;
 
 class RegisterCityOwnerController extends Controller {
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         $city = null;
@@ -26,6 +29,10 @@ class RegisterCityOwnerController extends Controller {
         return view('welcome', ['city' => $city]);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
     public function findZipCode(Request $request)
     {
         $cities = City::where('zip_code', $request->zip_code)->get();
@@ -41,11 +48,19 @@ class RegisterCityOwnerController extends Controller {
         return view('errors.notfound', ['zip_code' => $request->zip_code]);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function registerCity(Request $request)
     {
         return redirect()->route('register')->with(['city_ids' => $request->city_ids, 'zip_code' => $request->zip_code]);
     }
 
+    /**
+     * @param int $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function edit(int $id)
     {
         $city = City::find($id);
@@ -53,6 +68,11 @@ class RegisterCityOwnerController extends Controller {
         return view('cities.edit')->with(['city' => $city]);
     }
 
+    /**
+     * @param Request $request
+     * @param int $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function update(Request $request, int $id)
     {
         $city = City::find($id);
