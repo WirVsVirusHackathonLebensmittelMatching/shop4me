@@ -30,6 +30,19 @@ Route::post('/cities/register', function (Request $request) {
     return $controller->registerCity($request);
 })->name('cities.register');
 
+
+Route::get('/cities/edit/{id}', function ($id) {
+    $controller = new \App\Http\Controllers\RegisterCityOwnerController();
+
+    return $controller->edit($id);
+})->name('cities.edit');
+
+Route::post('/cities/update/{id}', function (Request $request, $id) {
+    $controller = new \App\Http\Controllers\RegisterCityOwnerController();
+
+    return $controller->update($request, $id);
+})->name('cities.update');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

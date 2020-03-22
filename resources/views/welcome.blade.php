@@ -68,7 +68,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Stadt A</h5>
                         <p class="card-text">Vervollständige deine Einkaufshelfer Details. Wie Hotline, E-Mail, etc.</p>
-                        <a href="#" class="btn btn-success">Bearbeiten</a>
+                        <a href="{{route('cities.edit', ['id'=>10425])}}" class="btn btn-success">Bearbeiten</a>
                     </div>
                 </div>
             </div>

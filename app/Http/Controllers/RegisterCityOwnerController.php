@@ -29,4 +29,19 @@ class RegisterCityOwnerController extends Controller {
         return redirect()->route('register')->with(['city_ids' => $request->city_ids, 'zip_code' => $request->zip_code]);
     }
 
+    public function edit(int $id)
+    {
+        $city = City::find($id);
+
+        return view('cities.edit')->with(['city' => $city]);
+    }
+
+    public function update(Request $request, int $id)
+    {
+        $city = City::find($id);
+        $city->save($request->all());
+
+        return view('cities.edit', ['city' => $city]);
+    }
+
 }
