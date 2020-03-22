@@ -18,7 +18,7 @@ class CreateCityTeamsTable extends Migration {
             $table->timestamps();
             $table->softDeletes();
             $table->string('hotline')->nullable();
-            $table->string('team_email')->unique();
+            $table->string('team_email')->unique()->nullable();
             $table->longText('description')->default('');
             $table->unsignedBigInteger('city_id')->nullable();
             $table->unsignedBigInteger('main_contact_id')->nullable();

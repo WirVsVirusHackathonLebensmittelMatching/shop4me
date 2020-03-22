@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\City;
+use App\CityTeam;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -91,6 +92,7 @@ class RegisterController extends Controller {
     public function registerCity(array $data, User $user)
     {
         $cities = City::where('zip_code', $data['zip_code']);
+        $cityTeam = new CityTeam();
         if ($cities->count() === 1)
         {
             $user->cities()->save($cities->first());
