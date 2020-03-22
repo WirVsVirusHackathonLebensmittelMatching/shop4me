@@ -42,7 +42,7 @@
         @if(!is_null($city))
             <div class="row mt-5">
                 <div class="col">
-                    <h3 class="text-center">Folgende Stadteile gehören zu deinem Team. <br>Sorge dich um sie. Danke
+                    <h3 class="text-center mb-5">Folgende Stadteile gehören zu deinem Team. <br>Sorge dich um sie. Danke
                         euch. ❤️</h3>
                     <table class="table table-striped">
                         <thead class="thead-light">

@@ -5,19 +5,45 @@
             <h1 class="text-center">
                 Starte dein Einkaufshilfe-Team <br>in deiner Stadt
             </h1>
-            <form action="{{route('cities.find')}}" method="post">
-                <div class="form-group">
-                    @csrf
-                    <label for=""></label>
-                    <input type="text"
-                           class="form-control form-control-lg" name="zip_code" id="zip_code"
-                           aria-describedby="helpId"
-                           placeholder="PLZ">
-                    <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
-                </div>
-                <input name="" id="" class="btn btn-lg btn-success" type="submit"
-                       value="Einkaufshelfer-Team gründen">
-            </form>
+            @auth
+                @if(auth()->user()->cities_count === 0)
+                    <form action="{{route('cities.find')}}" method="post">
+                        <div class="form-group">
+                            @csrf
+                            <label for=""></label>
+                            <input type="text"
+                                   class="form-control form-control-lg" name="zip_code" id="zip_code"
+                                   aria-describedby="helpId"
+                                   placeholder="PLZ">
+                            <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
+                        </div>
+                        <input name="" id="" class="btn btn-lg btn-success" type="submit"
+                               value="Einkaufshelfer-Team gründen">
+                    </form>
+                @else
+                    <div class="alert alert-success" role="alert">
+                        <strong> Du hast bereits eine Stadt für dein Team registriert. Aktuell kannst du nur eine
+                            Stadt unterstützen. Wir schätzen deine Ambitionen ;). Fühle dich gedrückt und bleibe gesund. 🌡️
+                        </strong>
+                    </div>
+                    <a class="btn btn-lg btn-success float-right" href="{{route('admin.home')}}" title="Stadt bearbeiten">Zu meiner Stadt</a>
+                @endif
+            @endauth
+            @guest
+                <form action="{{route('cities.find')}}" method="post">
+                    <div class="form-group">
+                        @csrf
+                        <label for=""></label>
+                        <input type="text"
+                               class="form-control form-control-lg" name="zip_code" id="zip_code"
+                               aria-describedby="helpId"
+                               placeholder="PLZ">
+                        <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
+                    </div>
+                    <input name="" id="" class="btn btn-lg btn-success" type="submit"
+                           value="Einkaufshelfer-Team gründen">
+                </form>
+            @endguest
         </div>
 
     </div>

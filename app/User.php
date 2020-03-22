@@ -40,6 +40,8 @@ class User extends Authenticatable {
         'email_verified_at' => 'datetime',
     ];
 
+    protected $withCount = ['cities'];
+
     /**
      * @return HasMany
      */
@@ -55,4 +57,5 @@ class User extends Authenticatable {
     {
         return $this->hasOne(CityTeam::class, 'main_contact_id');
     }
+
 }
