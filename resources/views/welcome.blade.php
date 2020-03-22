@@ -16,7 +16,7 @@
                                placeholder="PLZ">
                         <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
                     </div>
-                    <input name="" id="" class="btn btn-primary" type="submit" value="Einkaufshelfer-Team gründen">
+                    <input name="" id="" class="btn btn-lg btn-success" type="submit" value="Einkaufshelfer-Team gründen">
                 </form>
             </div>
 
@@ -25,30 +25,27 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Warum</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Ihr seid nicht alleine</h5>
+                        <p class="card-text">Gemeinsam mit dem Einkaufshilfe-Team aus Münster, haben wir diese Web App für euch entwickelt. Um euch und anderen schnell zu helfen, ein Team aufzubauen und eure Arbeit transparenter zu machen, dass auch jeder in deiner Stadt, der Hilfe braucht euch kennt und erreicht.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Warum</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Wissen</h5>
+                        <p class="card-text">Ihr wisst nicht wo ihr anfangen sollt, um zu starten? Wir haben für euch Dokumente, FAQs, Google Spreadsheets und Formulare vorbereitet. Dokumente, die real von Einkaufshilfe-Teams in Münster und Frankfurt genutzt werden. Kopiert euch die Vorlagen und legt los!</p>
+                        <a href="#" class="btn btn-success">Zu den Vorlagen</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Warum</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Mobilisieren</h5>
+                        <p class="card-text">Ihr möchtet Teams lokal bei euch helfen und unter die Arme greifen? Sie brauchen viel Unterstützung. Mobiliert euch, helft einander. Gemeinsam überwinden wir die COVID-19 Krise. Alle Kontaktdaten findest du hier. Suche nach deiner PLZ und kontaktiere das Team direkt.</p>
+                        <a href="#" class="btn btn-success">Team finden</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +86,7 @@
         @if(!is_null($city))
             <div class="row mt-5">
                 <div class="col">
-                    <h3 class="text-center">Folgende Stadteile gehören zu deinem Team. Sorge dich um sie. Danke dir ❤️</h3>
+                    <h3 class="text-center">Folgende Stadteile gehören zu deinem Team. <br>Sorge dich um sie. Danke euch. ❤️</h3>
                     <table class="table table-striped">
                         <thead class="thead-light">
                         <tr>
