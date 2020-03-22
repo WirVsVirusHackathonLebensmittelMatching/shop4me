@@ -35,7 +35,6 @@ class CityTeamController extends Controller {
     public function update(Request $request, int $id)
     {
         $actions = ['save', 'publish'];
-        Log::debug('update team', $request->all());
         $cityTeam = CityTeam::find($id);
         $data = $request->all();
         $cityTeam->description = $data['description'];

@@ -27,6 +27,5 @@ class AssignCity
      */
     public function handle(UserRegistered $event)
     {
-        Log::debug('event', [$event->zip_code]);
     }
 }
