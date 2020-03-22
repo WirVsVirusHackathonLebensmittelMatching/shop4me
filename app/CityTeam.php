@@ -26,6 +26,6 @@ class CityTeam extends Model {
      */
     public function cities(): HasMany
     {
-        return $this->hasMany(City::class, 'city_id');
+        return $this->hasMany(City::class);
     }
 }

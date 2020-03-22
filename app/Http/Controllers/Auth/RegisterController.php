@@ -98,14 +98,15 @@ class RegisterController extends Controller {
         $cityTeam->save();
         if ($cities->count() === 1)
         {
-            $cityTeam->cities()->save($cities->first());
-            $user->cities()->save($cities->first());
+            $city = $cities->first();
+            $user->cities()->save($city);
+            $city->city_team()->associate($cityTeam);
         }
         if ($cities->count() > 1)
         {
-            $cityTeam->cities()->saveMany($cities);
-            $cities->each(function ($city) use ($user) {
+            $cities->each(function ($city) use ($user, $cityTeam) {
                 $city->owner()->associate($user);
+                $city->city_team()->associate($cityTeam);
                 $city->save();
             });
         }
