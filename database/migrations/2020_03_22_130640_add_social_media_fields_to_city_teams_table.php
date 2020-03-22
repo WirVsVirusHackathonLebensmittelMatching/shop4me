@@ -16,7 +16,7 @@ class AddSocialMediaFieldsToCityTeamsTable extends Migration {
         Schema::table('city_teams', function (Blueprint $table) {
             $table->string('facebook')->nullable();
             $table->string('twitter')->nullable();
-            $table->string('andere')->nullable();
+            $table->string('others')->nullable();
         });
     }
 
@@ -28,7 +28,7 @@ class AddSocialMediaFieldsToCityTeamsTable extends Migration {
     public function down()
     {
         Schema::table('city_teams', function (Blueprint $table) {
-            $table->dropColumn(['facebook', 'twitter', 'andere']);
+            $table->dropColumn(['facebook', 'twitter', 'others']);
         });
     }
 }
