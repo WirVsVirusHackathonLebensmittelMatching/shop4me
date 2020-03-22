@@ -16,9 +16,8 @@
                     <h3 class="hotline"><a
                             href="mailto:{{$city->city_team->team_email}}">{{$city->city_team->team_email}}</a>
                     </h3>
-                    <label for="support_email">Beschreibung</label>
-                    <h3 class="hotline">{{$city->city_team->description}}</h3>
-                    <p class="card-text">Text</p>
+                    <label for="description">Beschreibung</label>
+                    <p class="card-text">{{$city->city_team->description}}</p>
                 </div>
             </div>
 
