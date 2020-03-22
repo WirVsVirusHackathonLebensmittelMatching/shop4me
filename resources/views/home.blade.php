@@ -17,7 +17,7 @@
                         <p class="card-text">
                             Super, du bist registriert und kannst jetzt weitere Details zu deiner Stadt hinzufügen.
                         </p>
-                        <a href="/" class="btn btn-success">Jetzt bearbeiten</a>
+                        <a href="{{route('admin.home')}}" class="btn btn-primary">Jetzt bearbeiten</a>
                     </div>
                 </div>
             </div>

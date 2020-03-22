@@ -18,7 +18,7 @@ Route::get('/', function () {
     $controller = new \App\Http\Controllers\RegisterCityOwnerController();
 
     return $controller->index();
-});
+})->name('home');
 
 Route::post('/cities/find', function (Request $request) {
     $controller = new \App\Http\Controllers\RegisterCityOwnerController();
@@ -50,6 +50,12 @@ Route::post('/city-teams/update/{id}', function (Request $request, $id) {
 
     return $controller->update($request, $id);
 })->name('city-teams.update');
+
+Route::get('/admin/home', function () {
+    $controller = new \App\Http\Controllers\CityTeamController();
+
+    return $controller->admin();
+})->name('admin.home');
 
 Auth::routes();
 
