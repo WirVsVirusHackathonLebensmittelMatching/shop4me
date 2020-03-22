@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\City;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -51,10 +52,13 @@ class RegisterController extends Controller {
      */
     protected function validator(array $data)
     {
+        Log::debug('data validator', $data);
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'zip_code' => ['required', 'exists:cities,zip_code'],
         ]);
     }
 
@@ -73,12 +77,17 @@ class RegisterController extends Controller {
         ]);
 
         Log::info('user registered', $data);
+        $this->registerCity($data, $user);
 
         return $user;
     }
 
-    public function registerCity(Request $request)
+    public function registerCity(array $data, User $user)
     {
-
+        $cities = City::where('zip_code', $data['zip_code']);
+        if ($cities->count() === 1)
+        {
+            $user->cities()->save($cities->first());
+        }
     }
 }
