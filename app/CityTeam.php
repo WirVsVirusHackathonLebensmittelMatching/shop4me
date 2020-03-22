@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class CityTeam extends Model {
 
+    const STATUS = [0 => 'Entwurf', 1 => 'Online'];
+
     protected $fillable = [
         'hotline',
         'team_email',
@@ -27,5 +29,10 @@ class CityTeam extends Model {
     public function cities(): HasMany
     {
         return $this->hasMany(City::class);
+    }
+
+    public function getStatus()
+    {
+        return self::STATUS[$this->status];
     }
 }

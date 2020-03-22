@@ -45,6 +45,12 @@ Route::post('/cities/update/{id}', function (Request $request, $id) {
     return $controller->update($request, $id);
 })->name('cities.update');
 
+Route::post('/city-teams/update/{id}', function (Request $request, $id) {
+    $controller = new \App\Http\Controllers\CityTeamController();
+
+    return $controller->update($request, $id);
+})->name('city-teams.update');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
