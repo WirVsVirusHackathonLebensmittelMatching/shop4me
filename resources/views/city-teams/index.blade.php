@@ -18,7 +18,7 @@
                     @endforeach
                 </td>
                 <td>
-                    @foreach($team->cities->pluck('zip_code') as $zipCode)
+                    @foreach($team->cities->pluck('zip_code')->unique() as $zipCode)
                         {{$zipCode}},<br>
                     @endforeach
                 </td>

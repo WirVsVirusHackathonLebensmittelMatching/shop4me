@@ -57,7 +57,7 @@ Route::get('/city-teams/view/{id}', function ($id) {
     return $controller->view($id);
 })->name('city-teams.view');
 
-Route::get('/city-teams/}', function () {
+Route::get('/city-teams/', function () {
     $controller = new \App\Http\Controllers\CityTeamController();
 
     return $controller->index();
