@@ -72,7 +72,7 @@
                         euch Dokumente, FAQs, Google Spreadsheets und Formulare vorbereitet. Dokumente, die
                         real von Einkaufshilfe-Teams in Münster und Frankfurt genutzt werden. Kopiert euch
                         die Vorlagen und legt los!</p>
-                    <a href="#" class="btn btn-success">Zu den Vorlagen</a>
+                    <a href="https://drive.google.com/drive/folders/1DhRRVY6NT04CoTKzB3esUG5cfQWgwpSx" target="_blank" class="btn btn-success">Zu den Vorlagen</a>
                 </div>
             </div>
         </div>
