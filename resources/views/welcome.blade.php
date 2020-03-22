@@ -109,7 +109,7 @@
                                 <td scope="row">{{$city->city_name}}</td>
                                 <td>{{$city->zip_code}}</td>
                                 <td>{{$city->state}}</td>
-                                <td>{{$city->city_team->hotline}}</td>
+                                <td><a href="tel:{{$city->city_team->hotline}}">{{$city->city_team->hotline}}</a></td>
                                 <td>
                                     <a class="btn btn-sm btn-success"
                                        href="{{route('city-teams.view', ['id' => $city->id])}}"
