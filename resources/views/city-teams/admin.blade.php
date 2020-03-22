@@ -66,6 +66,25 @@
             </div>
 
         @endif
-
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto">
+                <h3 class="text-center">
+                    Weitere Stadt unterstützen?
+                </h3>
+                <form action="{{route('cities.find')}}" method="post">
+                    <div class="form-group">
+                        @csrf
+                        <label for=""></label>
+                        <input type="text"
+                               class="form-control form-control-lg" name="zip_code" id="zip_code"
+                               aria-describedby="helpId"
+                               placeholder="PLZ">
+                        <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
+                    </div>
+                    <input name="" id="" class="btn btn-lg btn-success" type="submit"
+                           value="Weitere Städte hinzufügen">
+                </form>
+            </div>
+        </div>
     @endauth
 @endsection

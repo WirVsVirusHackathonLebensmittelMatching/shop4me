@@ -23,8 +23,7 @@
                     </form>
                 @else
                     <div class="alert alert-success" role="alert">
-                        <strong> Du hast bereits eine Stadt für dein Team registriert. Aktuell kannst du nur eine
-                            Stadt unterstützen. Wir schätzen deine Ambitionen ;). Fühle dich gedrückt und bleibe gesund.
+                        <strong> Du hast bereits eine Stadt für dein Team registriert. Du möchtest noch weitere Stadtteile hinzufügen? Fühle dich gedrückt und bleibe gesund. Unter "Meiner Stadt" kannst du weitere hinzufügen.
                             🌡️
                         </strong>
                     </div>
