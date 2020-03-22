@@ -54,7 +54,9 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Ihr seid nicht alleine</h5>
-                    <p class="card-text">Gemeinsam mit dem Einkaufshilfe-Team aus Münster, haben wir diese
+                    <p class="card-text">Gemeinsam mit dem <a
+                            href="https://www.allesmuenster.de/wwu-studierende-organisieren-einkaufshilfe/"
+                            title="Einkaufshilfe-Team Münster">Einkaufshilfe-Team aus Münster</a>, haben wir diese
                         Web App für euch entwickelt. Um euch und anderen schnell zu helfen, ein Team
                         aufzubauen und eure Arbeit transparenter zu machen, dass auch jeder in deiner Stadt,
                         der Hilfe braucht euch kennt und erreicht.</p>
