@@ -67,10 +67,11 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Stadt A</h5>
+                            <h5 class="card-title">Einkaufshelfer Details</h5>
                             <p class="card-text">Vervollständige deine Einkaufshelfer Details. Wie Hotline, E-Mail,
                                 etc.</p>
-                            <a href="{{route('cities.edit', ['id'=> $city->id])}}" class="btn btn-success">Bearbeiten</a>
+                            <a href="{{route('cities.edit', ['id'=> $city->id])}}"
+                               class="btn btn-success">Bearbeiten</a>
                         </div>
                     </div>
                 </div>
@@ -85,5 +86,32 @@
                 </div>
             </div>
         </div>
+        @if(!is_null($city))
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 class="text-center">Folgende Stadteile gehören zu deinem Team. Sorge dich um sie. Danke dir ❤️</h3>
+                    <table class="table table-striped">
+                        <thead class="thead-light">
+                        <tr>
+                            <th>Stadt/Stadteil</th>
+                            <th>PLZ</th>
+                            <th>Bundesland</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($city->city_team->cities as $city)
+                            <tr>
+                                <td scope="row">{{$city->city_name}}</td>
+                                <td>{{$city->zip_code}}</td>
+                                <td>{{$city->state}}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        @endif
+
     @endauth
 @endsection
