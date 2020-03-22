@@ -30,4 +30,12 @@ class City extends Model {
         return $this->belongsTo(User::class, 'owner_id');
     }
 
+    /**
+     * @return BelongsTo
+     */
+    public function city_team(): BelongsTo
+    {
+        return $this->belongsTo(CityTeam::class);
+    }
+
 }

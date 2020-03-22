@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -44,5 +45,13 @@ class User extends Authenticatable {
     public function cities(): HasMany
     {
         return $this->hasMany(City::class, 'owner_id');
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function city_team(): BelongsTo
+    {
+        return $this->belongsTo(CityTeam::class);
     }
 }
