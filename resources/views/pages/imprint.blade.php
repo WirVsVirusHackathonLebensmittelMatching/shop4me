@@ -7,6 +7,7 @@
         Dennis Buchberger<br>
         Frederik Gahr<br>
         Jürgen Binder<br>
+        Johannes Wischert<br>
         Nhan Vu<br>
     </p>
     <p>
