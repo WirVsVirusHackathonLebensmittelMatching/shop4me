@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Log;
 
 class CityTeamController extends Controller {
 
+    public function index()
+    {
+        $cityTeams = CityTeam::all();
+
+        return view('city-teams.index', ['city_teams' => $cityTeams]);
+    }
+
     public function admin()
     {
         $city = null;

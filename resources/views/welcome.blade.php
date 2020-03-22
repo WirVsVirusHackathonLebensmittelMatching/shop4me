@@ -60,7 +60,7 @@
                         Web App für euch entwickelt. Um euch und anderen schnell zu helfen, ein Team
                         aufzubauen und eure Arbeit transparenter zu machen, dass auch jeder in deiner Stadt,
                         der Hilfe braucht euch kennt und erreicht.</p>
-                    <a href="#" class="btn btn-success">Go somewhere</a>
+                    <a href="{{route('city-teams.index')}}" class="btn btn-success">Einkaufshelfer-Teams</a>
                 </div>
             </div>
         </div>
@@ -128,51 +128,51 @@
             </section>
 
         @endif
-        <section>
-            <div class="row mt-5">
-                <div class="col-lg-5 mx-auto">
-                    <h2 class="text-center">Die Story</h2>
-                    <p class="text-center">Alles begann mit dem <a href="https://wirvsvirushackathon.org/"
-                                                                   title="Wir versus Virus Hackathon">WirVsVirusHackathon</a>.
-                        <br>Das Ergebnis seht ihr vor euren Augen.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Die Vision</h4>
-                            <p class="card-text"> Wir wollen Freiwilligen dabei helfen denjenigen, die dringend auf
-                                Hilfe angewiesen sind, diese auch schnellstmöglich zukommen zu lassen. Deswegen stellen
-                                wir mit Einkaufshilfe ein Werkzeug zur Verfügung, mit dem sich Ehrenamtliche mit
-                                mehreren Personen in ihrer Stadt, ihrem Dorf oder ihrer Kommune als
-                                Einkaufshilfe-Botschafter registrieren und den gesamten Prozess einfach verwalten
-                                können. Außerdem bekommen sie bei Einkaufshilfe Materialien wie Flyer und Plakate,
-                                HowTo-Anleitungen und weitere Informationen an die Hand, um ihre eigene
-                                Einkaufshilfe-Gruppe schnell und effektiv zu starten.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Die Mission</h4>
-                            <p class="card-text"> Da ältere Menschen, denen neben den anderen Risikogruppen vor allem
-                                geholfen werden muss, häufig keinen Zugang zu den vielen digitalen Hilfsangeboten haben,
-                                will Shop4Me den vielen Helfenden ein leicht zu handhabendes und vor allem übertragbares
-                                Werkzeug an die Hand geben, mit dem sie selbstständig agieren und Kontakte herstellen
-                                können.</p>
-                            <p class="card-text">Wir bauen auf die Erfahrung von ehrenamtlichen Gruppen auf, wie sie
-                                sich in den letzten Tagen vielerorts in Deutschland gegründet haben. Die Expertise einer
-                                Münsteraner-Freiwilligengruppe dient Shop4Me vor allem als Fundament. Unser
-                                hauptsächliches Anliegen ist es, diese Art der Freiwilligenhilfe zu vereinheitlichen und
-                                dadurch ein flächendeckendes Netz zu etablieren, um möglichst viele Menschen versorgen
-                                zu können.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     @endguest
+    <section>
+        <div class="row mt-5">
+            <div class="col-lg-5 mx-auto">
+                <h2 class="text-center">Die Story</h2>
+                <p class="text-center">Alles begann mit dem <a href="https://wirvsvirushackathon.org/"
+                                                               title="Wir versus Virus Hackathon">WirVsVirusHackathon</a>.
+                    <br>Das Ergebnis seht ihr vor euren Augen.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Die Vision</h4>
+                        <p class="card-text"> Wir wollen Freiwilligen dabei helfen denjenigen, die dringend auf
+                            Hilfe angewiesen sind, diese auch schnellstmöglich zukommen zu lassen. Deswegen stellen
+                            wir mit Einkaufshilfe ein Werkzeug zur Verfügung, mit dem sich Ehrenamtliche mit
+                            mehreren Personen in ihrer Stadt, ihrem Dorf oder ihrer Kommune als
+                            Einkaufshilfe-Botschafter registrieren und den gesamten Prozess einfach verwalten
+                            können. Außerdem bekommen sie bei Einkaufshilfe Materialien wie Flyer und Plakate,
+                            HowTo-Anleitungen und weitere Informationen an die Hand, um ihre eigene
+                            Einkaufshilfe-Gruppe schnell und effektiv zu starten.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Die Mission</h4>
+                        <p class="card-text"> Da ältere Menschen, denen neben den anderen Risikogruppen vor allem
+                            geholfen werden muss, häufig keinen Zugang zu den vielen digitalen Hilfsangeboten haben,
+                            will Shop4Me den vielen Helfenden ein leicht zu handhabendes und vor allem übertragbares
+                            Werkzeug an die Hand geben, mit dem sie selbstständig agieren und Kontakte herstellen
+                            können.</p>
+                        <p class="card-text">Wir bauen auf die Erfahrung von ehrenamtlichen Gruppen auf, wie sie
+                            sich in den letzten Tagen vielerorts in Deutschland gegründet haben. Die Expertise einer
+                            Münsteraner-Freiwilligengruppe dient Shop4Me vor allem als Fundament. Unser
+                            hauptsächliches Anliegen ist es, diese Art der Freiwilligenhilfe zu vereinheitlichen und
+                            dadurch ein flächendeckendes Netz zu etablieren, um möglichst viele Menschen versorgen
+                            zu können.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
 
