@@ -41,6 +41,9 @@ class CityTeamController extends Controller {
         $cityTeam->description = $data['description'];
         $cityTeam->hotline = $data['hotline'];
         $cityTeam->team_email = $data['team_email'];
+        $cityTeam->facebook = $data['facebook'];
+        $cityTeam->twitter = $data['twitter'];
+        $cityTeam->others = $data['others'];
         if (in_array($request->get('action'), $actions))
         {
             if ($request->get('action') === 'publish')

@@ -25,12 +25,34 @@
                            value="{{$city->city_team->team_email}}">
                 </div>
                 <div class="form-group">
+                    <label for="support_email">Dein Facebook</label>
+
+                    <input class="form-control form-control-lg" name="facebook" id="facebook"
+                           value="{{$city->city_team->facebook}}">
+                </div>
+                <div class="form-group">
+                    <label for="support_email">Dein Twitter</label>
+
+                    <input class="form-control form-control-lg" name="twitter" id="twitter"
+                           value="{{$city->city_team->twitter}}">
+                </div>
+                <div class="form-group">
+                    <label for="support_email">Anderes Social Dingsbums</label>
+
+                    <input class="form-control form-control-lg" name="others" id="others"
+                           value="{{$city->city_team->others}}">
+                </div>
+                <div class="form-group">
                     <label for="support_email">Beschreibung</label>
                     <textarea class="form-control" name="description" id="description"
                               rows="5">{{$city->city_team->description}}</textarea>
                 </div>
                 <button type="submit" name="action" value="save" class="btn btn-success">Speichern</button>
-                <button type="submit" name="action" value="publish" class="btn btn-dark">Speichern & Veröffentlichen</button>
+                @if($city->city_team->status === 0)
+                    <button type="submit" name="action" value="publish" class="btn btn-dark">Speichern &
+                        Veröffentlichen
+                    </button>
+                @endif
             </form>
         </div>
     </div>
