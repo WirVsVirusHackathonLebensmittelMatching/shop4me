@@ -59,7 +59,8 @@
                     @endauth
                 </div>
                 <div class="card-footer text-muted">
-                    Es kann 1-3 Sekunden dauern. Habe etwas Geduld.
+                    Es kann 1-3 Sekunden dauern. Habe etwas Geduld. <br>
+                    Der PDF-Generator läuft per Google Apps Script. Deine Daten werden hier an Google übermittelt. Was die damit noch machen? 🤷
                 </div>
             </div>
 
