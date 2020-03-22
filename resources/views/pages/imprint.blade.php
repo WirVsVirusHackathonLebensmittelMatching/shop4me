@@ -3,7 +3,7 @@
     <h1>Impressum</h1>
     <p>Das Projekt ist eine gemeinsame Zusammenarbeit von:
         <br>
-        Anke Pfeifer<br>
+        Ann-Kathrin Pfeifer<br>
         Dennis Buchberger<br>
         Frederik Gahr<br>
         Jürgen Binder<br>
