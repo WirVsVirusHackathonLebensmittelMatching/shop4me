@@ -69,6 +69,12 @@ Route::get('/admin/home', function () {
     return $controller->admin();
 })->name('admin.home');
 
+Route::get('/pages/imprint', function () {
+    $controller = new \App\Http\Controllers\PagesController();
+
+    return $controller->page('pages.imprint');
+})->name('page.imprint');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
