@@ -8,6 +8,7 @@
             <th>Ortsname</th>
             <th>PLZ</th>
             <th>Bundesland</th>
+            <th>Einkaufshilfe-Team vorhanden?</th>
         </tr>
         </thead>
         <tbody>
@@ -18,6 +19,7 @@
                 <td>{{$city->city_name}}</td>
                 <td>{{$city->zip_code}}</td>
                 <td>{{$city->state}}</td>
+                <td>{{$city->hasOwner()}}</td>
             </tr>
         @endforeach
         </tbody>

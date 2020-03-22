@@ -40,7 +40,8 @@ class RegisterCityOwnerController extends Controller {
      */
     public function findZipCode(Request $request)
     {
-        $cities = City::where('zip_code', $request->zip_code)->get();
+        $cities = City::where('zip_code', $request->zip_code)->get()
+            ->where('city_team_id', null);
 
         if ($cities->count() > 0)
         {

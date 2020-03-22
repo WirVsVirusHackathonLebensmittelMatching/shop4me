@@ -39,4 +39,19 @@ class City extends Model {
         return $this->belongsTo(CityTeam::class, 'city_team_id');
     }
 
+    /**
+     * @return bool
+     */
+    public function hasOwner()
+    {
+        $readableAttribute = [0 => 'Ja', 1 => 'Nein'];
+        $isEmpty = $this->getAttribute('city_team_id') > 0;
+        if ($isEmpty)
+        {
+            return 'Ja';
+        }
+
+        return 'Nein';
+    }
+    
 }
