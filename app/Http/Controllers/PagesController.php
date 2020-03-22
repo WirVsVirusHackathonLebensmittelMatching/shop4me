@@ -10,4 +10,9 @@ class PagesController extends Controller {
     {
         return view($viewName);
     }
+
+    public function tools()
+    {
+        return view('pages.tools');
+    }
 }

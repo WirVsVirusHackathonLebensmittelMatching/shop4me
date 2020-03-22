@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Tools</h5>
                         <p class="card-text">Finde hilfreiche Tools, um deine Einkaufshilfe zu bewerben.</p>
-                        <a href="#" class="btn btn-success">Anzeigen</a>
+                        <a href="{{route('tools')}}" class="btn btn-success">Anzeigen</a>
                     </div>
                 </div>
             </div>
