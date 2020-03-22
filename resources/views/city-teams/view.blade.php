@@ -24,4 +24,25 @@
 
         </div>
     </div>
+    <div class="row">
+        <div class="col-8 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Social Media</h3>
+                </div>
+                <div class="card-body">
+                    <label for="facebook">Facebook</label>
+                    <h3 class="facebook"><a href="{{$city->city_team->facebook}}" title="Facebook Link zu Einkaufshelfer in {{$city->city_name}}">{{$city->city_team->facebook}}</a>
+                    </h3>
+                    <label for="twitter">Twitter</label>
+                    <h3 class="twitter"><a href="{{$city->city_team->twitter}}" title="Facebook Link zu Einkaufshelfer in {{$city->city_name}}">{{$city->city_team->twitter}}</a>
+                    </h3>
+                    <label for="twitter">Sonstige</label>
+                    <h3 class="twitter"><a href="{{$city->city_team->others}}" title="Facebook Link zu Einkaufshelfer in {{$city->city_name}}">{{$city->city_team->others}}</a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
 @endsection
