@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-8 mx-auto">
             <div class="card">
                 <div class="card-header">
@@ -42,7 +42,6 @@
                     </h3>
                 </div>
             </div>
-
         </div>
     </div>
 @endsection

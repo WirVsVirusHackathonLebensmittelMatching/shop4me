@@ -2,7 +2,7 @@
 @section('content')
     <section>
     <div class="row mb-5">
-        <div class="col-6 mx-auto">
+        <div class="col-lg-6 mx-auto">
             <h1 class="text-center">
                 Starte dein Einkaufshilfe-Team <br>in deiner Stadt
             </h1>
@@ -51,7 +51,7 @@
 
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-12 mb-2">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Ihr seid nicht alleine</h5>
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-12  mb-2">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Wissen</h5>
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-12">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Mobilisieren</h5>
@@ -95,7 +95,7 @@
         @if($cities->count() > 0)
             <section>
                 <div class="row mt-5">
-                    <div class="col">
+                    <div class="col table-responsive-lg">
                         <h3 class="text-center mb-5">Folgende Städte werden von Einkaufshelfern unterstützt.️</h3>
                         <table class="table table-striped">
                             <thead class="thead-light">
@@ -131,7 +131,7 @@
         @endif
         <section>
             <div class="row mt-5">
-                <div class="col-5 mx-auto">
+                <div class="col-lg-5 mx-auto">
                     <h2 class="text-center">Die Story</h2>
                     <p class="text-center">Alles begann mit dem <a href="https://wirvsvirushackathon.org/"
                                                                    title="Wir versus Virus Hackathon">WirVsVirusHackathon</a>.
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 mb-2">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Die Vision</h4>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Die Mission</h4>
