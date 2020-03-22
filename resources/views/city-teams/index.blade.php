@@ -22,7 +22,7 @@
                         {{$zipCode}},<br>
                     @endforeach
                 </td>
-                <td>{{$team->hotline}}</td>
+                <td><a href="tel:{{$team->hotline}}">{{$team->hotline}}</a>
                 <td>
                     <a class="btn btn-sm btn-success"
                        href="{{route('city-teams.view', ['id' => $team->cities->first()->id])}}"
