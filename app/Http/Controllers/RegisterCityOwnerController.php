@@ -9,6 +9,7 @@ use App\CityTeam;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class RegisterCityOwnerController extends Controller {
 
@@ -27,7 +28,10 @@ class RegisterCityOwnerController extends Controller {
             }
         }
 
-        return view('welcome', ['city' => $city]);
+        $cities = City::whereNotNull('owner_id')
+            ->get();
+
+        return view('welcome', ['city' => $city, 'cities' => $cities]);
     }
 
     /**

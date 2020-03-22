@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\City;
 use App\CityTeam;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,6 +23,13 @@ class CityTeamController extends Controller {
         }
 
         return view('city-teams.admin', ['city' => $city]);
+    }
+
+    public function view(int $id)
+    {
+        $city = City::find($id);
+
+        return view('city-teams.view', ['city' => $city]);
     }
 
     public function update(Request $request, int $id)

@@ -51,6 +51,12 @@ Route::post('/city-teams/update/{id}', function (Request $request, $id) {
     return $controller->update($request, $id);
 })->name('city-teams.update');
 
+Route::get('/city-teams/view/{id}', function ($id) {
+    $controller = new \App\Http\Controllers\CityTeamController();
+
+    return $controller->view($id);
+})->name('city-teams.view');
+
 Route::get('/admin/home', function () {
     $controller = new \App\Http\Controllers\CityTeamController();
 
