@@ -13,12 +13,15 @@ class RegisterCityOwnerController extends Controller {
 
     public function index()
     {
-        $user = User::find(Auth::id());
         $city = null;
-        if ($user->cities()->exists())
+        if (Auth::check())
         {
-            $city = $user->cities->first();
-        };
+            $user = User::find(Auth::id());
+            if ($user->cities()->exists())
+            {
+                $city = $user->cities->first();
+            }
+        }
 
         return view('welcome', ['city' => $city]);
     }
