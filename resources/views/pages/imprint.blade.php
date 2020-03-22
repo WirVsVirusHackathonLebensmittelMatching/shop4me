@@ -6,7 +6,7 @@
         Anke Pfeifer<br>
         Dennis Buchberger<br>
         Frederik Gahr<br>
-        Jürgen <br>
+        Jürgen Binder<br>
         Nhan Vu<br>
     </p>
     <p>
