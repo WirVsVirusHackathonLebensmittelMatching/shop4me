@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    <h1 class="text-center mb-5">Alle Einkaufshilfe-Teams im Überblick</h1>
     <table class="table table-responsive-lg table-striped">
         <thead class="thead-light">
         <tr>
