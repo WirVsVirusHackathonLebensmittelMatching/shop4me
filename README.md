@@ -12,6 +12,14 @@ Den Bekanntheitsgrad erhöhen, so dass lokale Medien und Institutionen das Einka
 ## Dokumente
 Google Spreadsheet als Todo: https://docs.google.com/spreadsheets/d/1JsOTmSJcXoyl4v8mdFs6POtVYc2hNeWid8SpNesk3hc/edit#gid=0
 
+### Vorlagen zur Aufklärung
+https://drive.google.com/drive/folders/1DhRRVY6NT04CoTKzB3esUG5cfQWgwpSx
+
+## Google Spreadsheet Koordinierung
+https://docs.google.com/spreadsheets/d/1TqwHgSbBtl8gAMNlaAAy7LOh4ldpv9cvDstIJ_aFYrQ/edit#gid=244255471
+
+Anleitung zur Nutzung https://docs.google.com/document/d/1tVk9pQzUyl6pJJ3-Ugv9Wt5N-A0IYWh6RvJ75ktcpl0/edit#heading=h.swqhexp5uwg5
+
 ## Web App
 Eine laufende Version findest du auf https://einkaufshelfer.chainist.de/
 
