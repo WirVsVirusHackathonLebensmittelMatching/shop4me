@@ -53,13 +53,16 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($city->city_team->cities as $city)
-                            <tr>
-                                <td scope="row">{{$city->city_name}}</td>
-                                <td>{{$city->zip_code}}</td>
-                                <td>{{$city->state}}</td>
-                            </tr>
-                        @endforeach
+                        @if($city->city_team->cities()->exists())
+                            @foreach($city->city_team->cities as $city)
+                                <tr>
+                                    <td scope="row">{{$city->city_name}}</td>
+                                    <td>{{$city->zip_code}}</td>
+                                    <td>{{$city->state}}</td>
+                                </tr>
+                            @endforeach
+                        @endif
+
                         </tbody>
                     </table>
                 </div>
