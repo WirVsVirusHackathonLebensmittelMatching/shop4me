@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="row mb-5">
-        <div class="col-8 mx-auto">
+        <div class="col-lg-8 col-sm-12 mx-auto">
             <div class="card">
                 <div class="card-header">
                     <h2>Einkaufshelfer-Team für: {{$city->city_name}} {{$city->zip_code}}</h2>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-8 mx-auto">
+        <div class="col-lg-8 col-sm-12 mx-auto">
             <div class="card">
                 <div class="card-header">
                     <h3>Social Media</h3>
