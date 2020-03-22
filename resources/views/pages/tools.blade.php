@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Macht euch bekannt!</h4>
                     <p class="card-text">Füge deine Daten ein und du erhälst per E-Mail deinen Abreisszettel mit
-                        vorgefertigten Formulierungen für deine Stadt. Falls du eingeloggt bist. Werden die Felder
+                        vorgefertigten Formulierungen für deine Stadt. Falls du eingeloggt bist, werden die Felder
                         automatisch befüllt.</p>
                     @guest
                         <form method="GET"
