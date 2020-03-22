@@ -15,6 +15,7 @@ class City extends Model {
         'state_code',
         'province',
         'owner_id',
+        'city_team_id',
         'province_code',
         'lat',
         'lng',
@@ -35,7 +36,7 @@ class City extends Model {
      */
     public function city_team(): BelongsTo
     {
-        return $this->belongsTo(CityTeam::class);
+        return $this->belongsTo(CityTeam::class, 'city_team_id');
     }
 
 }

@@ -86,6 +86,7 @@ class RegisterController extends Controller {
     /**
      * Register the city and associate with
      * the created user account
+     *
      * @param array $data
      * @param User $user
      */
@@ -93,15 +94,18 @@ class RegisterController extends Controller {
     {
         $cities = City::where('zip_code', $data['zip_code']);
         $cityTeam = new CityTeam();
+        $cityTeam->contact()->associate($user);
+        $cityTeam->save();
         if ($cities->count() === 1)
         {
+            $cityTeam->cities()->save($cities->first());
             $user->cities()->save($cities->first());
         }
         if ($cities->count() > 1)
         {
+            $cityTeam->cities()->saveMany($cities);
             $cities->each(function ($city) use ($user) {
-                $city->owner()->associate($user
-                );
+                $city->owner()->associate($user);
                 $city->save();
             });
         }
