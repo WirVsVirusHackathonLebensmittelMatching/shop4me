@@ -15,7 +15,7 @@
             @if($team->cities()->exists())
                 <tr>
                     <td scope="row">
-                        @foreach($team->cities->pluck('city_name') as $cityName)
+                        @foreach($team->cities->pluck('city_name')->unique() as $cityName)
                             {{$cityName}},<br>
                         @endforeach
                     </td>
