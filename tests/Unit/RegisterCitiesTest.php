@@ -15,9 +15,10 @@ class RegisterCitiesTest extends TestCase {
         $user = User::find(1);
         $cityTeam = $user->city_team;
         $controller = new RegisterCityOwnerController();
-        $controller->registerCities('55218', $user);
+        $controller->registerCities('55120', $user);
         $this->assertDatabaseHas('cities', [
-            'zip_code' => '55218',
+            'zip_code' => '55120',
+            'owner_id' => $user->id,
             'city_team_id' => $user->city_team->id,
         ]);
     }

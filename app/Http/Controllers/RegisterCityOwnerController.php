@@ -89,14 +89,18 @@ class RegisterCityOwnerController extends Controller {
             $user->cities()->save($city);
             $city->city_team()->associate($cityTeam);
             $city->save();
+
+            return $city;
         }
-        if ($cities->count() > 1)
+        elseif ($cities->count() > 1)
         {
             $cities->each(function ($city) use ($user, $cityTeam) {
                 $city->owner()->associate($user);
                 $city->city_team()->associate($cityTeam);
                 $city->save();
             });
+
+            return $cities;
         }
     }
 
