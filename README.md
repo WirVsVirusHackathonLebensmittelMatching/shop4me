@@ -1,5 +1,6 @@
 # Shop For Me
 Eine einfache Web App, um Einkaufshelfer zu vernetzen.
+Weitere Details auch auf https://devpost.com/software/shop4me zu finden.
 
 ## Warum?
 Wir nutzen die Erfahrungswerte von dem Münster Team
