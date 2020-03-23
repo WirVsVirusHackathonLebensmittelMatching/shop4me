@@ -31,7 +31,10 @@ class RegisterCityOwnerController extends Controller {
         $cities = City::whereNotNull('owner_id')
             ->get()
             ->filter(function ($city, $key) {
-                return $city->city_team->status === 1;
+                if ($city->city_team()->exists())
+                {
+                    return $city->city_team->status === 1;
+                }
             });
 
         return view('welcome', ['city' => $city, 'cities' => $cities]);
