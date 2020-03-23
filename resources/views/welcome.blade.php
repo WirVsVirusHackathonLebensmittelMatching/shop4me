@@ -141,7 +141,7 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
-                        PDF Abreisszeitel
+                        PDF Abreisszettel
                     </div>
                     <div class="card-body">
                         <h4 class="card-title">Macht euch bekannt!</h4>
