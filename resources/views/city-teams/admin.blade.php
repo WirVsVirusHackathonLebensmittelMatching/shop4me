@@ -39,7 +39,7 @@
                 </div>
             </div>
         </div>
-        @if(!is_null($city))
+        @if(!is_null($city) && $city->city_team()->exists())
             <div class="row mt-5">
                 <div class="col">
                     <h3 class="text-center mb-5">Folgende Stadteile gehören zu deinem Team. <br>Sorge dich um sie. Danke
