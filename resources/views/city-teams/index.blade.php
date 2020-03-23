@@ -12,24 +12,26 @@
         </thead>
         <tbody>
         @foreach($city_teams as $team)
-            <tr>
-                <td scope="row">
-                    @foreach($team->cities->pluck('city_name') as $cityName)
-                        {{$cityName}},<br>
-                    @endforeach
-                </td>
-                <td>
-                    @foreach($team->cities->pluck('zip_code')->unique() as $zipCode)
-                        {{$zipCode}},<br>
-                    @endforeach
-                </td>
-                <td><a href="tel:{{$team->hotline}}">{{$team->hotline}}</a>
-                <td>
-                    <a class="btn btn-sm btn-success"
-                       href="{{route('city-teams.view', ['id' => $team->cities->first()->id])}}"
-                       title="Details zum Team">Details</a>
-                </td>
-            </tr>
+            @if($team->cities()->exists())
+                <tr>
+                    <td scope="row">
+                        @foreach($team->cities->pluck('city_name') as $cityName)
+                            {{$cityName}},<br>
+                        @endforeach
+                    </td>
+                    <td>
+                        @foreach($team->cities->pluck('zip_code')->unique() as $zipCode)
+                            {{$zipCode}},<br>
+                        @endforeach
+                    </td>
+                    <td><a href="tel:{{$team->hotline}}">{{$team->hotline}}</a>
+                    <td>
+                        <a class="btn btn-sm btn-success"
+                           href="{{route('city-teams.view', ['id' => $team->cities->first()->id])}}"
+                           title="Details zum Team">Details</a>
+                    </td>
+                </tr>
+            @endif
         @endforeach
         </tbody>
     </table>
