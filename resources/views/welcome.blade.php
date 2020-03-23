@@ -134,7 +134,7 @@
         <div class="row mt-5">
             <div class="col-lg-6 mx-auto">
                 <h2 class="text-center">Helferlein für die Helfer</h2>
-                <p class="text-center font-italic">Generiere deinen individuellen Abreiszettel und erhalte diesen direkt in deine E-Mail Inbox. Nutze es bitte nicht, um andere E-Mail Inboxen zu belästigen.</p>
+                <p class="text-center font-italic">Generiere deinen individuellen Abreisszettel und erhalte diesen direkt in deine E-Mail Inbox. Nutze es bitte nicht, um andere E-Mail Inboxen zu belästigen.</p>
                 <p>Hast du schon die Dokumentenvorlagen gesehen? Oder Das Google Spreadsheet, dass dir hilft deine Einkaufshelfer und Anfragen zu koordinieren?</p>
                 <p>Lese hierzu <a href="https://docs.google.com/document/d/1tVk9pQzUyl6pJJ3-Ugv9Wt5N-A0IYWh6RvJ75ktcpl0/edit#heading=h.swqhexp5uwg5" title="Google Spreadsheet Anleitung">die Anleitung</a> und nutze es. Wir freuen uns auf deine Rückmeldung, Verbesserungsvorschläge etc. Kopiere <a href="https://docs.google.com/spreadsheets/d/1TqwHgSbBtl8gAMNlaAAy7LOh4ldpv9cvDstIJ_aFYrQ/edit#gid=244255471" title="Google Spreadsheet Vorlage">die Vorlage</a> und leg los!</p>
             </div>
