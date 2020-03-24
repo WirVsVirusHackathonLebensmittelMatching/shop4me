@@ -20,6 +20,12 @@ Route::get('/', function () {
     return $controller->index();
 })->name('home');
 
+Route::get('/cities/', function () {
+    $controller = new \App\Http\Controllers\RegisterCityOwnerController();
+
+    return $controller->all();
+})->name('cities.all');
+
 Route::post('/cities/find', function (Request $request) {
     $controller = new \App\Http\Controllers\RegisterCityOwnerController();
 

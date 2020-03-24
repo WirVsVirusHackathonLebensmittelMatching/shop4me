@@ -29,6 +29,8 @@ class RegisterCityOwnerController extends Controller {
         }
 
         $cities = City::whereNotNull('owner_id')
+            ->orderBy('created_at', 'desc')
+            ->limit(10)
             ->get()
             ->filter(function ($city, $key) {
                 if ($city->city_team()->exists())
@@ -38,6 +40,19 @@ class RegisterCityOwnerController extends Controller {
             });
 
         return view('welcome', ['city' => $city, 'cities' => $cities]);
+    }
+
+    public function all()
+    {
+        $cities = City::whereNotNull('owner_id')
+            ->get()
+            ->filter(function ($city, $key) {
+                if ($city->city_team()->exists())
+                {
+                    return $city->city_team->status === 1;
+                }
+            });
+        return view('cities.list', ['cities' => $cities]);
     }
 
     /**

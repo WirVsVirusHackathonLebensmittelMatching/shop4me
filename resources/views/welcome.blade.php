@@ -105,9 +105,9 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col table-responsive-lg">
+                <div class="col-lg-12 table-responsive-lg">
 
-                    <h3 class="text-center mb-5">Folgende Städte werden von Einkaufshelfern unterstützt.️</h3>
+                    <h3 class="text-center mb-5">Kürzlich hinzugefügte Städte von Einkaufshelfern.️</h3>
                     <table class="table table-striped">
                         <thead class="thead-light">
                         <tr>
@@ -135,6 +135,11 @@
                         @endforeach
                         </tbody>
                     </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 d-block mx-auto text-center">
+                    <a href="{{route('cities.all')}}" title="Alle Städte mit Einkaufshilfen anzeigen." class="btn btn-success btn-lg mx-auto">Alle Städte anzeigen</a>
                 </div>
             </div>
         </section>
