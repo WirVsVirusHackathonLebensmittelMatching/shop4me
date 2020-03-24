@@ -84,7 +84,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mobilisieren</h5>
                         <p class="card-text">Ihr möchtet Teams lokal bei euch helfen und unter die Arme greifen?
-                            Sie brauchen viel Unterstützung. Mobiliert euch, helft einander. Gemeinsam
+                            Sie brauchen viel Unterstützung. Mobilisiert euch, helft einander. Gemeinsam
                             überwinden wir die COVID-19 Krise. Alle Kontaktdaten findest du hier. Suche nach
                             deiner PLZ und kontaktiere das Team direkt.</p>
                         <a href="#" class="btn btn-success">Team finden</a>
