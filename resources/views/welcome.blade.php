@@ -211,6 +211,7 @@
                 <p class="text-center">Alles begann mit dem <a href="https://wirvsvirushackathon.org/"
                                                                title="Wir versus Virus Hackathon">WirVsVirusHackathon</a>.
                     <br>Das Ergebnis seht ihr vor euren Augen.</p>
+                <p class="text-center"><img src="{{asset('images/wirvsvirus-logo.svg')}}" alt="WirvsVirus Hackathon Projekt Logo" width="100%"></p>
             </div>
         </div>
         <div class="row">
