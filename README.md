@@ -38,5 +38,5 @@ Wir bauen auf die Erfahrung von ehrenamtlichen Gruppen auf, wie sie sich in den 
 
 ## Verwendete Technologie
 - Laravel 7.x https://laravel.com/ (Open Source PHP-Framework)
-- Twitter Bootstrap (Open Source Responsive CSS-Framework)
+- Twitter Bootstrap https://getbootstrap.com/ (Open Source Responsive CSS-Framework)
 - undraw Illustrationen https://undraw.co/ (Open Source SVG-Grafiken)
