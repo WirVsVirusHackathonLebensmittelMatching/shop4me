@@ -35,3 +35,8 @@ Die Mission
 Da ältere Menschen, denen neben den anderen Risikogruppen vor allem geholfen werden muss, häufig keinen Zugang zu den vielen digitalen Hilfsangeboten haben, will Shop4Me den vielen Helfenden ein leicht zu handhabendes und vor allem übertragbares Werkzeug an die Hand geben, mit dem sie selbstständig agieren und Kontakte herstellen können.
 
 Wir bauen auf die Erfahrung von ehrenamtlichen Gruppen auf, wie sie sich in den letzten Tagen vielerorts in Deutschland gegründet haben. Die Expertise einer Münsteraner-Freiwilligengruppe dient Shop4Me vor allem als Fundament. Unser hauptsächliches Anliegen ist es, diese Art der Freiwilligenhilfe zu vereinheitlichen und dadurch ein flächendeckendes Netz zu etablieren, um möglichst viele Menschen versorgen zu können.
+
+## Verwendete Technologie
+- Laravel 7.x https://laravel.com/ (Open Source PHP-Framework)
+- Twitter Bootstrap (Open Source Responsive CSS-Framework)
+- undraw Illustrationen https://undraw.co/ (Open Source SVG-Grafiken)
