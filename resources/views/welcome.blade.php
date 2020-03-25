@@ -9,6 +9,7 @@
                 <h1 class="text-center">
                     Starte dein Einkaufshilfe-Team <br>in deiner Stadt
                 </h1>
+                <p class="text-center font-italic">Gemeinsam gegen das Coronavirus. Gemeinsam Risikogruppen helfen.</p>
 
                 @auth
                     @if(auth()->user()->cities_count === 0)
@@ -22,8 +23,10 @@
                                        placeholder="PLZ">
                                 <small id="helpId" class="form-text text-muted">Gebe deine PLZ ein</small>
                             </div>
-                            <input name="" id="" class="btn btn-lg btn-success" type="submit"
-                                   value="Einkaufshelfer-Team gründen">
+                            <div class="col-lg-6 d-block mx-auto text-center">
+                                <input name="find_city" id="" class="btn btn-lg btn-success mx-auto" type="submit"
+                                       value="Einkaufshelfer-Team gründen">
+                            </div>
                         </form>
                     @else
                         <div class="alert alert-success" role="alert">
