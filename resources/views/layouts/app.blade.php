@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" aria-label="Navigation">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}"> ❤️
                 {{ config('app.name', 'Einkaufshelfer') }} 🛒 <small>things break! alpha alpha!</small>
@@ -85,7 +85,7 @@
     <footer class="py-4 container">
         <nav class="navbar navbar-expand navbar-light bg-light">
             <div class="nav navbar-nav">
-                <a class="nav-item nav-link" href="{{route('page.imprint')}}">Impressum <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="{{route('page.imprint')}}">Impressum</a>
             </div>
         </nav>
     </footer>

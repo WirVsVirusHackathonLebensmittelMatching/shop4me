@@ -111,6 +111,14 @@
                 </div>
             </div>
             <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="text-center">Werde ein Teil dieser Zahlen.</h3>
+                </div>
+            </div>
+            <dashboard-component>
+
+            </dashboard-component>
+            <div class="row mt-5">
                 <div class="col-lg-12 table-responsive-lg">
 
                     <h3 class="text-center mb-5">Kürzlich hinzugefügte Städte von Einkaufshelfern.️</h3>
