@@ -29,7 +29,7 @@ class RegisterCityOwnerController extends Controller {
         }
 
         $cities = City::whereNotNull('owner_id')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('updated_at', 'desc')
             ->limit(10)
             ->get()
             ->filter(function ($city, $key) {
