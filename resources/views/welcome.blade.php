@@ -74,10 +74,10 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Wissen</h5>
-                        <p class="card-text">Ihr wisst nicht wo ihr anfangen sollt, um zu starten? Wir haben für
+                        <p class="card-text">Ihr wisst nicht wo ihr anfangen sollt um zu starten? Wir haben für
                             euch Dokumente, FAQs, Google Spreadsheets und Formulare vorbereitet. Dokumente, die
                             real von Einkaufshilfe-Teams in Münster und Frankfurt genutzt werden. Kopiert euch
-                            die Vorlagen und legt los!</p>
+                            die Vorlagen und legt los! Auch in unserem <a href="https://github.com/WirVsVirusHackathonLebensmittelMatching/shop4me/wiki" title="Github Wiki für Einkaufshelfer">Wiki</a>.</p>
                         <a href="https://drive.google.com/drive/folders/1DhRRVY6NT04CoTKzB3esUG5cfQWgwpSx"
                            target="_blank" class="btn btn-success">Zu den Vorlagen</a>
                     </div>
