@@ -5,11 +5,12 @@
         <thead class="thead-light">
         <tr>
             <th>Lfd.Nr.</th>
-            <th>Ortsname</th>
+            <th>Stadt</th>
             <th>PLZ</th>
             <th>Bundesland</th>
             <th>Kreis</th>
             <th>Hotline</th>
+            <th>Kontakt</th>
             <th></th>
         </tr>
         </thead>
@@ -23,6 +24,8 @@
                 <td>{{$city->state}}</td>
                 <td>{{$city->province}}</td>
                 <td><a href="tel:{{$city->city_team->hotline}}">{{$city->city_team->hotline}}</a>
+                </td>
+                <td>{{$city->owner->name}}
                 </td>
                 <td>
                     <a class="btn btn-sm btn-success"
