@@ -77,7 +77,9 @@
                         <p class="card-text">Ihr wisst nicht wo ihr anfangen sollt um zu starten? Wir haben für
                             euch Dokumente, FAQs, Google Spreadsheets und Formulare vorbereitet. Dokumente, die
                             real von Einkaufshilfe-Teams in Münster und Frankfurt genutzt werden. Kopiert euch
-                            die Vorlagen und legt los! Auch in unserem <a href="https://github.com/WirVsVirusHackathonLebensmittelMatching/shop4me/wiki" title="Github Wiki für Einkaufshelfer">Wiki</a>.</p>
+                            die Vorlagen und legt los! Auch in unserem <a
+                                href="https://github.com/WirVsVirusHackathonLebensmittelMatching/shop4me/wiki"
+                                title="Github Wiki für Einkaufshelfer">Wiki</a>.</p>
                         <a href="https://drive.google.com/drive/folders/1DhRRVY6NT04CoTKzB3esUG5cfQWgwpSx"
                            target="_blank" class="btn btn-success">Zu den Vorlagen</a>
                     </div>
@@ -101,7 +103,8 @@
         <section>
             <div class="row mt-5">
                 <div class="col-lg-5 mx-auto">
-                    <img src="{{asset('images/stadt-pin-grafik.svg')}}" alt="Stadt Illustration mit Pin und Bogen" class="img-fluid">
+                    <img src="{{asset('images/stadt-pin-grafik.svg')}}" alt="Stadt Illustration mit Pin und Bogen"
+                         class="img-fluid">
                 </div>
             </div>
             <div class="row mt-5">
@@ -127,7 +130,7 @@
                                 <td>{{$city->state}}</td>
                                 <td><a href="tel:{{$city->city_team->hotline}}">{{$city->city_team->hotline}}</a>
                                 </td>
-                                <td><a href="tel:{{$city->owner->name}}">{{$city->owner->name}}</a>
+                                <td>{{$city->owner->name}}
                                 </td>
                                 <td>
                                     <a class="btn btn-sm btn-success"
@@ -142,7 +145,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 d-block mx-auto text-center">
-                    <a href="{{route('cities.all')}}" title="Alle Städte mit Einkaufshilfen anzeigen." class="btn btn-success btn-lg mx-auto">Alle Städte anzeigen</a>
+                    <a href="{{route('cities.all')}}" title="Alle Städte mit Einkaufshilfen anzeigen."
+                       class="btn btn-success btn-lg mx-auto">Alle Städte anzeigen</a>
                 </div>
             </div>
         </section>
@@ -152,10 +156,18 @@
         <div class="row mt-5">
             <div class="col-lg-6 mx-auto">
                 <h2 class="text-center">Helferlein für die Helfer</h2>
-                <p class="text-center"><img width="50%" src="{{asset('images/einkaufswagen-helfer.svg')}}" class="img-fluid" alt="Illustration Helfer und Einkaufswagen"> </p>
-                <p class="text-center font-italic">Generiere deinen individuellen Abreisszettel und erhalte diesen direkt in deine E-Mail Inbox. Nutze es bitte nicht, um andere E-Mail Inboxen zu belästigen.</p>
-                <p>Hast du schon die Dokumentenvorlagen gesehen? Oder Das Google Spreadsheet, dass dir hilft deine Einkaufshelfer und Anfragen zu koordinieren?</p>
-                <p>Lese hierzu <a href="https://docs.google.com/document/d/1tVk9pQzUyl6pJJ3-Ugv9Wt5N-A0IYWh6RvJ75ktcpl0/edit#heading=h.swqhexp5uwg5" title="Google Spreadsheet Anleitung">die Anleitung</a> und nutze es. Wir freuen uns auf deine Rückmeldung, Verbesserungsvorschläge etc. Kopiere <a href="https://docs.google.com/spreadsheets/d/1TqwHgSbBtl8gAMNlaAAy7LOh4ldpv9cvDstIJ_aFYrQ/edit#gid=244255471" title="Google Spreadsheet Vorlage">die Vorlage</a> und leg los!</p>
+                <p class="text-center"><img width="50%" src="{{asset('images/einkaufswagen-helfer.svg')}}"
+                                            class="img-fluid" alt="Illustration Helfer und Einkaufswagen"></p>
+                <p class="text-center font-italic">Generiere deinen individuellen Abreisszettel und erhalte diesen
+                    direkt in deine E-Mail Inbox. Nutze es bitte nicht, um andere E-Mail Inboxen zu belästigen.</p>
+                <p>Hast du schon die Dokumentenvorlagen gesehen? Oder Das Google Spreadsheet, dass dir hilft deine
+                    Einkaufshelfer und Anfragen zu koordinieren?</p>
+                <p>Lese hierzu <a
+                        href="https://docs.google.com/document/d/1tVk9pQzUyl6pJJ3-Ugv9Wt5N-A0IYWh6RvJ75ktcpl0/edit#heading=h.swqhexp5uwg5"
+                        title="Google Spreadsheet Anleitung">die Anleitung</a> und nutze es. Wir freuen uns auf deine
+                    Rückmeldung, Verbesserungsvorschläge etc. Kopiere <a
+                        href="https://docs.google.com/spreadsheets/d/1TqwHgSbBtl8gAMNlaAAy7LOh4ldpv9cvDstIJ_aFYrQ/edit#gid=244255471"
+                        title="Google Spreadsheet Vorlage">die Vorlage</a> und leg los!</p>
             </div>
             <div class="col-lg-6">
                 <div class="card">
@@ -182,7 +194,8 @@
                                     <label for="mail">Stadt</label>
                                     <input class="form-control" name="ort" type="text" value="">
                                 </div>
-                                <button class="btn btn-success" type="submit" name="action" value="google_pdf_render">PDF
+                                <button class="btn btn-success" type="submit" name="action" value="google_pdf_render">
+                                    PDF
                                     generieren
                                 </button>
                             </form>
@@ -204,11 +217,13 @@
                                     <label for="ort">Stadt</label>
                                     <select name="ort" class="city-select" id="city-select" required>
                                         @foreach(auth()->user()->city_team->cities as $city)
-                                            <option value="{{$city->city_name}}">{{$city->city_name}}, {{$city->zip_code}}</option>
+                                            <option value="{{$city->city_name}}">{{$city->city_name}}
+                                                , {{$city->zip_code}}</option>
                                         @endforeach
                                     </select>
                                 </div>
-                                <button class="btn btn-success" type="submit" name="action" value="google_pdf_render">PDF
+                                <button class="btn btn-success" type="submit" name="action" value="google_pdf_render">
+                                    PDF
                                     generieren
                                 </button>
                             </form>
@@ -216,7 +231,8 @@
                     </div>
                     <div class="card-footer text-muted">
                         Es kann 1-3 Sekunden dauern. Habe etwas Geduld. <br>
-                        Der PDF-Generator läuft per Google Apps Script. Deine Daten werden hier an Google übermittelt. Was die damit noch machen? 🤷
+                        Der PDF-Generator läuft per Google Apps Script. Deine Daten werden hier an Google übermittelt.
+                        Was die damit noch machen? 🤷
                     </div>
                 </div>
 
@@ -230,7 +246,8 @@
                 <p class="text-center">Alles begann mit dem <a href="https://wirvsvirushackathon.org/"
                                                                title="Wir versus Virus Hackathon">WirVsVirusHackathon</a>.
                     <br>Das Ergebnis seht ihr vor euren Augen.</p>
-                <p class="text-center"><img src="{{asset('images/wirvsvirus-logo.svg')}}" alt="WirvsVirus Hackathon Projekt Logo" class="img-fluid"></p>
+                <p class="text-center"><img src="{{asset('images/wirvsvirus-logo.svg')}}"
+                                            alt="WirvsVirus Hackathon Projekt Logo" class="img-fluid"></p>
             </div>
         </div>
         <div class="row">
@@ -247,7 +264,8 @@
                             HowTo-Anleitungen und weitere Informationen an die Hand, um ihre eigene
                             Einkaufshilfe-Gruppe schnell und effektiv zu starten.</p>
                         <p class="card-text text-center">
-                            <img src="{{asset('images/hand-pflanze-grafik.svg')}}" class="img-fluid" alt="Illustration Frau umarmt Oma" />
+                            <img src="{{asset('images/hand-pflanze-grafik.svg')}}" class="img-fluid"
+                                 alt="Illustration Frau umarmt Oma"/>
                         </p>
                     </div>
                 </div>
@@ -268,7 +286,8 @@
                             dadurch ein flächendeckendes Netz zu etablieren, um möglichst viele Menschen versorgen
                             zu können.</p>
                         <p class="card-text col-lg-7 text-center">
-                            <img src="{{asset('images/grossmutter-umarmen-grafik.svg')}}" class="img-fluid" alt="Illustration Frau umarmt Oma" />
+                            <img src="{{asset('images/grossmutter-umarmen-grafik.svg')}}" class="img-fluid"
+                                 alt="Illustration Frau umarmt Oma"/>
                         </p>
                     </div>
                 </div>
