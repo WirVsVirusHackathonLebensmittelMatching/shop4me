@@ -111,10 +111,11 @@
                     <table class="table table-striped">
                         <thead class="thead-light">
                         <tr>
-                            <th>Stadt/Stadteil</th>
+                            <th>Stadt</th>
                             <th>PLZ</th>
                             <th>Bundesland</th>
                             <th>Hotline</th>
+                            <th>Kontakt</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -125,6 +126,8 @@
                                 <td>{{$city->zip_code}}</td>
                                 <td>{{$city->state}}</td>
                                 <td><a href="tel:{{$city->city_team->hotline}}">{{$city->city_team->hotline}}</a>
+                                </td>
+                                <td><a href="tel:{{$city->owner->name}}">{{$city->city_team->hotline}}</a>
                                 </td>
                                 <td>
                                     <a class="btn btn-sm btn-success"
