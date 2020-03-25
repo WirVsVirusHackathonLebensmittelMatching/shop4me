@@ -127,7 +127,7 @@
                                 <td>{{$city->state}}</td>
                                 <td><a href="tel:{{$city->city_team->hotline}}">{{$city->city_team->hotline}}</a>
                                 </td>
-                                <td><a href="tel:{{$city->owner->name}}">{{$city->city_team->hotline}}</a>
+                                <td><a href="tel:{{$city->owner->name}}">{{$city->owner->name}}</a>
                                 </td>
                                 <td>
                                     <a class="btn btn-sm btn-success"
